@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SR - JR</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_container">
+        <div class="header_logo">
+          <span>SR</span>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main" id="inicio">
+      <div class="main_container">
+        <section class="inicio">
+          <h1>Soy Sebastian Romiti</h1>
+          <h2>Desarrollador web en formación</h2>
+          <a href="#contacto">Contacto</a>
+        </section>
+
+        <section class="sobre_mi" id="sobre-mi">
+          <h2>Sobre mí</h2>
+          <p>
+            Soy estudiante de programación web, con conocimientos en HTML, CSS y
+            SASS. Me apasiona el mundo de la programación porque siempre
+            representa un desafío y una oportunidad de superación. Disfruto
+            resolver problemas, aprender cosas nuevas y aplicar lo que aprendo
+            en proyectos reales que me permitan crecer día a día. Mi objetivo es
+            seguir desarrollándome como programador y construir un futuro
+            profesional combinando creatividad y tecnología.
+          </p>
+          <h3>Mis Valores</h3>
+          <ul>
+            <li>🚀 Aprendizaje constante</li>
+            <li>🧩 Resolver desafíos</li>
+            <li>🤝 Trabajo en equipo</li>
+            <li>💡 Creatividad en cada proyecto</li>
+          </ul>
+        </section>
+
+        <section class="proyectos" id="proyectos">
+          <h2>Proyectos</h2>
+
+          <div class="card_proyecto">
+            <h3>Tienda Online Materos</h3>
+            <img
+              src="./images/proyecto-materos.png"
+              alt="Proyecto Sitio Web Materos"
+            />
+
+            <p>
+              Ecommerce desarrollado con HTML, CSS y SASS. Cuenta con diseño
+              responsive, optimización SEO y animaciones con AOS. Deployado en
+              Vercel.
+            </p>
+            <a href="https://materos.vercel.app">Ver Sitio</a>
+            <a href="https://github.com/sebastianromiti/sebastian-romiti.git"
+              >Ver Codigo</a
+            >
+          </div>
+        </section>
+
+        <section class="habilidades" id="habilidades">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SASS</li>
+            <li>Git & GitHub</li>
+            <li>SEO Basico</li>
+          </ul>
+        </section>
+
+        <section class="contacto" id="contacto">
+          <h2>Contacto</h2>
+          <form action="submit">
+            <label for="text"></label>
+            <input type="text" placeholder="Nombre" />
+            <label for="text"></label>
+            <input type="email" placeholder="Tu mail" />
+            <textarea name="comentario" id="comentario">Comentario</textarea>
+          </form>
+          <button type="submit">Enviar</button>
+          <div class="sociales">
+            <p>O encontrame en:</p>
+            <a href="#">Likendin</a>
+            <a href="#">GitHub</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>© Sebastian Romiti - Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

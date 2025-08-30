@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/body.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 5rem;
+  background-color: #fefefe10;
+  backdrop-filter: blur(0.4rem);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header_container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo span {
+  font-size: 60px;
+  font-weight: bold;
+  color: #efb810;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.navbar ul li a:hover {
+  color: #efb810;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 100dvh;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+}
+
+.inicio {
+  border-radius: 5rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem;
+}
+
+.inicio h1 {
+  color: #efb810;
+  font-size: 6rem;
+  margin: 40px;
+}
+
+.inicio h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.inicio a {
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: 2px solid transparent;
+}
+
+.inicio a:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.sobre_mi {
+  border-radius: 5rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  padding: 5rem;
+}
+
+.sobre_mi h2 {
+  color: #efb810;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.sobre_mi p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.sobre_mi h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sobre_mi ul {
+  display: flex;
+}
+
+.sobre_mi ul li {
+  margin: 0.5rem;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  border: 2px solid #fefefe10;
+  backdrop-filter: blur(0.2rem);
+  border-radius: 1rem;
+}
+
+.proyectos {
+  color: #ffffff;
+  border-radius: 5rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.proyectos h2 {
+  color: #efb810;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.card_proyecto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fefefe10;
+  border: 2px solid #fefefe10;
+  backdrop-filter: blur(0.2rem);
+  width: 50%;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.card_proyecto img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.card_proyecto h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card_proyecto p {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.card_proyecto a {
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: 2px solid transparent;
+}
+
+.card_proyecto a:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5rem;
+  width: 100%;
+  height: 100vh;
+  padding: 5rem;
+}
+
+.habilidades h2 {
+  font-size: 3rem;
+  color: #efb810;
+  margin-bottom: 5rem;
+}
+
+.habilidades ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.habilidades ul li {
+  display: flex;
+  margin: 0.5rem;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #fefefe10;
+  border: 2px solid #fefefe10;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.2rem);
+}
+
+.contacto {
+  border-radius: 5rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5rem;
+}
+
+.contacto h2 {
+  font-size: 3rem;
+  color: #efb810;
+  margin-bottom: 2rem;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.1rem;
+  background-color: #fefefe10;
+  border: 2px solid #fefefe10;
+  backdrop-filter: blur(0.2rem);
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.contacto form label {
+  margin-top: 1rem;
+}
+
+.contacto form input {
+  width: 800px;
+  padding: 1rem 1rem;
+}
+
+.contacto form textarea {
+  margin-top: 1rem;
+  width: 800px;
+  height: 10rem;
+}
+
+.contacto button {
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid transparent;
+}
+
+.contacto button:hover {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.sociales {
+  margin: 2rem;
+}
+.sociales p {
+  color: white;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.sociales a {
+  font-weight: bold;
+  color: white;
+  margin: 1rem;
+}
+
+.sociales a:hover {
+  text-decoration: underline;
+  color: #efb810;
+}
+
+.footer {
+  display: flex;
+  background-color: #fafafa10;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
